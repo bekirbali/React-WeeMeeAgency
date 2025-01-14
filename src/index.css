@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+p,
+span,
+h1,
+h2,
+h3,
+h4 {
+  cursor: default;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

@@ -1,10 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 // Placeholder logos (replace with actual company logos)
-const logos = Array(6).fill("/logo-placeholder.png");
+const logos = Array(3).fill("/logo-placeholder.png");
 
 const References = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="references" className="section bg-gray-50">
       <div className="container">
@@ -16,7 +19,7 @@ const References = () => {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Trusted by Industry Leaders
+            {t("references.title")}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -25,7 +28,7 @@ const References = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-gray-600 max-w-2xl mx-auto"
           >
-            We've helped companies of all sizes achieve their digital goals.
+            {t("references.subtitle")}
           </motion.p>
         </div>
 
@@ -39,7 +42,7 @@ const References = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex items-center justify-center"
             >
-              <div className="w-32 h-16 bg-gray-200 rounded-lg flex items-center justify-center grayscale hover:grayscale-0 transition-all cursor-pointer">
+              <div className="w-64 h-32 bg-gray-200 rounded-lg flex items-center justify-center grayscale hover:grayscale-0 transition-all cursor-pointer">
                 <div className="text-gray-400 font-semibold">
                   LOGO {index + 1}
                 </div>

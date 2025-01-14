@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import {
   MagnifyingGlassIcon,
   ChartBarIcon,
@@ -8,40 +9,37 @@ import {
   MegaphoneIcon,
 } from "@heroicons/react/24/outline";
 
-const services = [
-  {
-    title: "SEO DENEMETİMİ",
-    description:
-      "Web sitenizin arama motoru optimizasyonunu detaylı bir şekilde analiz ederek, görünürlüğünüzü artıracak öneriler sunuyoruz.",
-    icon: MagnifyingGlassIcon,
-  },
-  {
-    title: "WEB SİTESİ ANALİZİ",
-    description:
-      "Sitenizin performansını, kullanıcı deneyimini ve teknik altyapısını kapsamlı bir şekilde inceleyerek iyileştirme fırsatlarını belirliyoruz.",
-    icon: ChartBarIcon,
-  },
-  {
-    title: "İÇERİK STRATEJİSİ GELİŞTİRME",
-    description:
-      "Markanıza özel, hedef kitlenizi etkileyecek ve dönüşüm oranlarını artıracak içerik stratejileri oluşturuyoruz.",
-    icon: DocumentTextIcon,
-  },
-  {
-    title: "SOSYAL MEDYA YÖNETİMİ",
-    description:
-      "Sosyal medya platformlarında markanızı etkili bir şekilde temsil ederek, topluluk etkileşimini ve marka bilinirliğini artırıyoruz.",
-    icon: ChatBubbleBottomCenterTextIcon,
-  },
-  {
-    title: "REKLAM KAMPANYALARI",
-    description:
-      "Hedeflerinize uygun, etkili ve ölçülebilir dijital reklam kampanyaları planlayıp yönetiyoruz.",
-    icon: MegaphoneIcon,
-  },
-];
-
 const Services = () => {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      title: t("services.seoAudit"),
+      description: t("services.seoAuditDesc"),
+      icon: MagnifyingGlassIcon,
+    },
+    {
+      title: t("services.webAnalysis"),
+      description: t("services.webAnalysisDesc"),
+      icon: ChartBarIcon,
+    },
+    {
+      title: t("services.contentStrategy"),
+      description: t("services.contentStrategyDesc"),
+      icon: DocumentTextIcon,
+    },
+    {
+      title: t("services.socialMedia"),
+      description: t("services.socialMediaDesc"),
+      icon: ChatBubbleBottomCenterTextIcon,
+    },
+    {
+      title: t("services.advertising"),
+      description: t("services.advertisingDesc"),
+      icon: MegaphoneIcon,
+    },
+  ];
+
   return (
     <section id="services" className="section bg-white">
       <div className="container">
@@ -53,18 +51,8 @@ const Services = () => {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Hizmetlerimiz
+            {t("services.title")}
           </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-gray-600 max-w-2xl mx-auto"
-          >
-            Dijital dünyada işletmenizi büyütmek için kapsamlı çözümler
-            sunuyoruz.
-          </motion.p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -78,7 +66,7 @@ const Services = () => {
                 duration: 0.5,
                 delay: index * 0.3,
               }}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-[150%] transition-shadow"
             >
               <service.icon className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>

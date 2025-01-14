@@ -1,0 +1,52 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "references": "References",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "We Create Digital Solutions",
+    "subtitle": "Transform your business with our innovative digital solutions",
+    "cta": "Get Started"
+  },
+  "services": {
+    "title": "Our Services",
+    "seoAudit": "SEO AUDIT",
+    "seoAuditDesc": "We analyze your website's search engine optimization in detail and provide recommendations to increase your visibility.",
+    "webAnalysis": "WEBSITE ANALYSIS",
+    "webAnalysisDesc": "We comprehensively examine your site's performance, user experience, and technical infrastructure to identify improvement opportunities.",
+    "contentStrategy": "CONTENT STRATEGY DEVELOPMENT",
+    "contentStrategyDesc": "We create content strategies tailored to your brand that will impact your target audience and increase conversion rates.",
+    "socialMedia": "SOCIAL MEDIA MANAGEMENT",
+    "socialMediaDesc": "We effectively represent your brand on social media platforms, increasing community engagement and brand awareness.",
+    "advertising": "ADVERTISING CAMPAIGNS",
+    "advertisingDesc": "We plan and manage effective and measurable digital advertising campaigns tailored to your goals."
+  },
+  "references": {
+    "title": "References",
+    "subtitle": "Trusted by leading companies"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "description": "Creating exceptional digital experiences that drive growth and success.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Subscribe to our newsletter for updates and insights.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    },
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

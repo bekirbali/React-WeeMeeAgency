@@ -1,0 +1,52 @@
+{
+  "navbar": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "references": "Referanslar",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Dijital Çözümler Üretiyoruz",
+    "subtitle": "İnovatif dijital çözümlerimizle işinizi dönüştürün",
+    "cta": "Başlayın"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "seoAudit": "SEO DENEMETİMİ",
+    "seoAuditDesc": "Web sitenizin arama motoru optimizasyonunu detaylı bir şekilde analiz ederek, görünürlüğünüzü artıracak öneriler sunuyoruz.",
+    "webAnalysis": "WEB SİTESİ ANALİZİ",
+    "webAnalysisDesc": "Sitenizin performansını, kullanıcı deneyimini ve teknik altyapısını kapsamlı bir şekilde inceleyerek iyileştirme fırsatlarını belirliyoruz.",
+    "contentStrategy": "İÇERİK STRATEJİSİ GELİŞTİRME",
+    "contentStrategyDesc": "Markanıza özel, hedef kitlenizi etkileyecek ve dönüşüm oranlarını artıracak içerik stratejileri oluşturuyoruz.",
+    "socialMedia": "SOSYAL MEDYA YÖNETİMİ",
+    "socialMediaDesc": "Sosyal medya platformlarında markanızı etkili bir şekilde temsil ederek, topluluk etkileşimini ve marka bilinirliğini artırıyoruz.",
+    "advertising": "REKLAM KAMPANYALARI",
+    "advertisingDesc": "Hedeflerinize uygun, etkili ve ölçülebilir dijital reklam kampanyaları planlayıp yönetiyoruz."
+  },
+  "references": {
+    "title": "Referanslar",
+    "subtitle": "Önde gelen şirketlerin tercihi"
+  },
+  "contact": {
+    "title": "İletişim",
+    "name": "İsim",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "message": "Mesaj",
+    "send": "Mesaj Gönder"
+  },
+  "footer": {
+    "description": "Büyüme ve başarıyı destekleyen olağanüstü dijital deneyimler yaratıyoruz.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "followUs": "Bizi Takip Edin",
+    "newsletter": {
+      "title": "Bülten",
+      "description": "Güncellemeler ve içgörüler için bültenimize abone olun.",
+      "placeholder": "E-posta adresiniz",
+      "button": "Abone Ol"
+    },
+    "rights": "Tüm hakları saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları"
+  }
+}

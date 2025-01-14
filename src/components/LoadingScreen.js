@@ -5,12 +5,12 @@ const LoadingScreen = () => {
   return (
     <div className="fixed inset-0 bg-white flex items-center justify-center">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 120 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.8 }}
         className="text-4xl md:text-6xl font-bold text-primary"
       >
-        WeeMeAgency
+        WeeMe Agency
         <motion.div
           className="h-1 bg-primary mt-2"
           initial={{ width: 0 }}

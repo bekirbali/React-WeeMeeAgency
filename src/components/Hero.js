@@ -1,8 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -16,13 +19,9 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Creative solutions,{" "}
-              <span className="text-primary">impactful results.</span>
+              {t("hero.title")} <span className="text-primary"></span>
             </h1>
-            <p className="text-gray-600 text-lg mb-8">
-              We transform your ideas into exceptional digital experiences that
-              drive growth and elevate your brand.
-            </p>
+            <p className="text-gray-600 text-lg mb-8">{t("hero.subtitle")}</p>
             <div className="flex gap-4">
               <Link
                 to="contact"
@@ -32,7 +31,7 @@ const Hero = () => {
                 duration={50}
                 className="btn-primary cursor-pointer"
               >
-                Get Started
+                {t("hero.cta")}
               </Link>
               <Link
                 to="services"
@@ -42,7 +41,7 @@ const Hero = () => {
                 duration={50}
                 className="btn border-2 border-primary text-primary hover:bg-primary hover:text-white cursor-pointer"
               >
-                Learn More
+                {t("navbar.services")}
               </Link>
             </div>
           </motion.div>

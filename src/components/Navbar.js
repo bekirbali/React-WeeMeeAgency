@@ -1,25 +1,30 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
-const navLinks = [
-  { name: "Home", to: "home" },
-  { name: "Services", to: "services" },
-  { name: "References", to: "references" },
-  { name: "Contact", to: "contact" },
-];
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
+
+  const navLinks = [
+    { name: t("navbar.home"), to: "home" },
+    { name: t("navbar.services"), to: "services" },
+    { name: t("navbar.references"), to: "references" },
+    { name: t("navbar.contact"), to: "contact" },
+  ];
 
   return (
     <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="text-2xl font-bold text-primary">WeeMeAgency</div>
+          <div className="text-2xl font-bold text-primary cursor-default">
+            WeeMeAgency
+          </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -33,6 +38,7 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -65,6 +71,9 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
+              <div className="pt-2">
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
         )}
