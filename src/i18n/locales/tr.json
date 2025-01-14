@@ -33,7 +33,11 @@
     "email": "E-posta",
     "phone": "Telefon",
     "message": "Mesaj",
-    "send": "Mesaj Gönder"
+    "send": "Mesaj Gönder",
+    "privacyPolicyStart": "",
+    "and": "ve",
+    "privacyPolicyEnd": "kabul ediyorum",
+    "privacyPolicyRequired": "Lütfen devam etmek için Gizlilik Politikasını kabul edin"
   },
   "footer": {
     "description": "Büyüme ve başarıyı destekleyen olağanüstü dijital deneyimler yaratıyoruz.",
@@ -48,5 +52,53 @@
     "rights": "Tüm hakları saklıdır.",
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Şartları"
+  },
+  "privacyPolicy": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son Güncelleme: 2024",
+    "collection": {
+      "title": "Bilgi Toplama",
+      "content": "İletişim formumuzu kullandığınızda gönüllü olarak sağladığınız isim, e-posta adresi ve telefon numarası gibi bilgileri topluyoruz. Bu bilgiler yalnızca sorularınıza yanıt vermek amacıyla kullanılmaktadır."
+    },
+    "usage": {
+      "title": "Bilgi Kullanımı",
+      "content": "Topladığımız bilgiler sizinle iletişim kurmak ve talep ettiğiniz hizmetleri sağlamak için kullanılır. Kişisel bilgilerinizi üçüncü taraflarla satmaz veya paylaşmayız."
+    },
+    "protection": {
+      "title": "Bilgi Koruma",
+      "content": "Kişisel bilgilerinizi yetkisiz erişim, değişiklik veya ifşaya karşı korumak için uygun güvenlik önlemleri uyguluyoruz."
+    },
+    "cookies": {
+      "title": "Çerezler",
+      "content": "Web sitemiz, tarama deneyiminizi geliştirmek için çerezler kullanabilir. Tarayıcı ayarlarınızdan çerezleri devre dışı bırakabilirsiniz."
+    },
+    "contact": {
+      "title": "Bize Ulaşın",
+      "content": "Gizlilik Politikamız hakkında sorularınız varsa, lütfen iletişim formu aracılığıyla bizimle iletişime geçin."
+    }
+  },
+  "terms": {
+    "title": "Kullanım Şartları",
+    "lastUpdated": "Son Güncelleme: 2024",
+    "acceptance": {
+      "title": "Şartların Kabulü",
+      "content": "Web sitemize erişerek ve kullanarak bu Kullanım Şartlarını kabul etmiş olursunuz."
+    },
+    "services": {
+      "title": "Hizmetler",
+      "content": "Dijital pazarlama ve web geliştirme hizmetleri sunuyoruz. Hizmetlerin özel detayları ve kapsamı her proje için ayrıca belirlenecektir."
+    },
+    "intellectual": {
+      "title": "Fikri Mülkiyet",
+      "content": "Bu web sitesindeki metin, grafik, logo ve görseller dahil tüm içerik bizim mülkiyetimizdir ve fikri mülkiyet yasaları tarafından korunmaktadır."
+    },
+    "liability": {
+      "title": "Sorumluluk Sınırlaması",
+      "content": "Hizmetlerimizin kullanımından veya kullanılamamasından kaynaklanan dolaylı, arızi, özel veya sonuç olarak ortaya çıkan zararlardan sorumlu olmayacağız."
+    },
+    "contact": {
+      "title": "İletişim",
+      "content": "Bu Kullanım Şartları ile ilgili sorularınız için lütfen iletişim formu aracılığıyla bizimle iletişime geçin."
+    }
   }
 }

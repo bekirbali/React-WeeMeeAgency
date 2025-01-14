@@ -8,6 +8,7 @@ import {
   ChatBubbleBottomCenterTextIcon,
   MegaphoneIcon,
 } from "@heroicons/react/24/outline";
+import "../index.css";
 
 const Services = () => {
   const { t } = useTranslation();
@@ -59,14 +60,14 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              initial={{ opacity: 0, y: 20, x: -50 }}
+              initial={{ opacity: 0, y: 0, x: -50 }}
               whileInView={{ opacity: 1, y: 0, x: 0 }}
               viewport={{ once: true }}
               transition={{
-                duration: 0.5,
+                duration: 0.8,
                 delay: index * 0.3,
               }}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-[150%] transition-shadow"
+              className="bg-[#fafafa] p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow"
             >
               <service.icon className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>

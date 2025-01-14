@@ -33,7 +33,11 @@
     "email": "Email",
     "phone": "Phone",
     "message": "Message",
-    "send": "Send Message"
+    "send": "Send Message",
+    "privacyPolicyStart": "I agree to the",
+    "and": "and",
+    "privacyPolicyEnd": "",
+    "privacyPolicyRequired": "Please accept the Privacy Policy to continue"
   },
   "footer": {
     "description": "Creating exceptional digital experiences that drive growth and success.",
@@ -48,5 +52,53 @@
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: 2024",
+    "collection": {
+      "title": "Information Collection",
+      "content": "We collect information that you voluntarily provide to us when you use our contact form, including your name, email address, and phone number. This information is used solely for the purpose of responding to your inquiries."
+    },
+    "usage": {
+      "title": "Information Usage",
+      "content": "The information we collect is used to communicate with you and provide the services you request. We do not sell or share your personal information with third parties."
+    },
+    "protection": {
+      "title": "Information Protection",
+      "content": "We implement appropriate security measures to protect your personal information from unauthorized access, alteration, or disclosure."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "Our website may use cookies to enhance your browsing experience. You can choose to disable cookies through your browser settings."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about our Privacy Policy, please contact us through the provided contact form."
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated: 2024",
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "content": "By accessing and using our website, you accept and agree to be bound by these Terms of Service."
+    },
+    "services": {
+      "title": "Services",
+      "content": "We provide digital marketing and web development services. The specific details and scope of services will be agreed upon separately for each project."
+    },
+    "intellectual": {
+      "title": "Intellectual Property",
+      "content": "All content on this website, including text, graphics, logos, and images, is our property and is protected by intellectual property laws."
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "content": "We shall not be liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use our services."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "For any questions regarding these Terms of Service, please contact us through the provided contact form."
+    }
   }
 }
