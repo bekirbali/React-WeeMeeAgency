@@ -12,7 +12,7 @@ const Hero = () => {
       className="section min-h-screen flex items-center bg-gray-50"
     >
       <div className="container">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center text-center md:text-left">
           <motion.div
             initial={{ opacity: 0, x: -120 }}
             animate={{ opacity: 1, x: 0 }}
@@ -22,7 +22,7 @@ const Hero = () => {
               {t("hero.title")} <span className="text-primary"></span>
             </h1>
             <p className="text-gray-600 text-lg mb-8">{t("hero.subtitle")}</p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center md:justify-start">
               <Link
                 to="contact"
                 spy={true}

@@ -1,9 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { arcelik, mercedes, cola } from "../assets";
 
 // Placeholder logos (replace with actual company logos)
-const logos = Array(3).fill("/logo-placeholder.png");
+// const logos = Array(3).fill("/logo-placeholder.png");
+const logos = [
+  {
+    name: "Arcelik",
+    logo: arcelik,
+  },
+  {
+    name: "Mercedes",
+    logo: mercedes,
+  },
+  {
+    name: "Cola",
+    logo: cola,
+  },
+];
 
 const References = () => {
   const { t } = useTranslation();
@@ -32,20 +47,22 @@ const References = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16">
-          {logos.map((_, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
+          {logos.map((logo, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex items-center justify-center"
+              className="w-full flex items-center justify-center"
             >
-              <div className="w-64 h-32 bg-gray-200 rounded-lg flex items-center justify-center grayscale hover:grayscale-0 transition-all cursor-pointer">
-                <div className="text-gray-400 font-semibold">
-                  LOGO {index + 1}
-                </div>
+              <div className="w-full max-w-[250px] aspect-[4/3] flex items-center justify-center grayscale hover:grayscale-0 transition-all cursor-pointer p-4">
+                <img
+                  src={logo.logo}
+                  alt={logo.name}
+                  className="max-w-full max-h-full object-cover"
+                />
               </div>
             </motion.div>
           ))}
@@ -58,10 +75,7 @@ const References = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <p className="text-gray-600">
-            Join our growing list of satisfied clients and experience the
-            difference.
-          </p>
+          <p className="text-gray-600">{t("references.subtitle")}</p>
         </motion.div>
       </div>
     </section>
