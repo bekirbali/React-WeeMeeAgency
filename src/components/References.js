@@ -68,15 +68,17 @@ const References = () => {
           ))}
         </div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <p className="text-gray-600">{t("references.subtitle")}</p>
-        </motion.div>
+          <p className="text-gray-600">
+            
+          </p>
+        </motion.div> */}
       </div>
     </section>
   );
