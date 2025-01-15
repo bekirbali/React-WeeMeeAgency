@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
+import { hero_img } from "../assets";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -52,6 +53,14 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="hidden md:block"
           >
+            <img src={hero_img} alt="hero" className="rounded-lg" />
+          </motion.div>
+          {/* <motion.div
+            initial={{ opacity: 0, x: 120 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="hidden md:block"
+          >
             <div className="relative">
               <div className="absolute -inset-4 bg-primary/10 rounded-lg transform rotate-3"></div>
               <div className="relative bg-white p-6 rounded-lg shadow-lg">
@@ -62,7 +71,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

@@ -19,8 +19,8 @@ const Navbar = () => {
     <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="text-2xl font-bold text-primary cursor-default">
-            WeeMeAgency
+          <div className="text-2xl font-bold text-primary cursor-pointer">
+            <Link to="home">WeeMeAgency</Link>
           </div>
 
           {/* Desktop Menu */}

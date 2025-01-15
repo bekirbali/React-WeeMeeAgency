@@ -211,7 +211,8 @@ const Contact = () => {
                   <MapPinIcon className="h-6 w-6 text-primary flex-shrink-0" />
                   <div>
                     <p className="text-gray-600">
-                      123 Business Street, Suite 100, City, Country
+                      Barbaros Mah. Begonya Sok. Nidakule Ataşehir Batı Kapı
+                      No:1 Daire:2 Ataşehir/İstanbul 34746
                     </p>
                   </div>
                 </div>

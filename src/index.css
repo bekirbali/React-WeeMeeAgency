@@ -67,16 +67,16 @@ h4 {
   position: absolute;
   width: 35px;
   height: 26px;
-  background-color: white;
+  background-color: rgba(52, 181, 255, 0.87);
   border-radius: 50px;
   top: 2px;
-  left: 7px;
+  left: 6px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: left 0.3s ease;
 }
 
 .toggle-switch.active .toggle-knob {
-  left: 36px; /* Knob sağa kayar */
+  left: 37px; /* Knob sağa kayar */
 }
 
 .label {

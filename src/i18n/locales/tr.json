@@ -6,22 +6,24 @@
     "contact": "İletişim"
   },
   "hero": {
-    "title": "Dijital Çözümler Üretiyoruz",
-    "subtitle": "İnovatif dijital çözümlerimizle işinizi dönüştürün",
+    "title": "Yaratıcı çözümler, etkili sonuçlar.",
+    "subtitle": "Dijital dünyanın gücünü keşfedin, potansiyelinizi ortaya çıkarın.",
     "cta": "Başlayın"
   },
   "services": {
     "title": "Hizmetlerimiz",
-    "seoAudit": "SEO DENEMETİMİ",
-    "seoAuditDesc": "Web sitenizin arama motoru optimizasyonunu detaylı bir şekilde analiz ederek, görünürlüğünüzü artıracak öneriler sunuyoruz.",
-    "webAnalysis": "WEB SİTESİ ANALİZİ",
-    "webAnalysisDesc": "Sitenizin performansını, kullanıcı deneyimini ve teknik altyapısını kapsamlı bir şekilde inceleyerek iyileştirme fırsatlarını belirliyoruz.",
-    "contentStrategy": "İÇERİK STRATEJİSİ GELİŞTİRME",
-    "contentStrategyDesc": "Markanıza özel, hedef kitlenizi etkileyecek ve dönüşüm oranlarını artıracak içerik stratejileri oluşturuyoruz.",
-    "socialMedia": "SOSYAL MEDYA YÖNETİMİ",
-    "socialMediaDesc": "Sosyal medya platformlarında markanızı etkili bir şekilde temsil ederek, topluluk etkileşimini ve marka bilinirliğini artırıyoruz.",
-    "advertising": "REKLAM KAMPANYALARI",
-    "advertisingDesc": "Hedeflerinize uygun, etkili ve ölçülebilir dijital reklam kampanyaları planlayıp yönetiyoruz."
+    "seoAudit": "SEO Optimizasyonu",
+    "seoAuditDesc": "Web sitenizin arama motorlarında üst sıralarda yer alması için gerekli tüm SEO çalışmalarını yürütüyoruz. Anahtar kelime araştırması, teknik SEO, içerik optimizasyonu ve backlink stratejileri ile organik trafiğinizi artırıyoruz. Web sitenizin performansını sürekli takip ederek SEO stratejinizi güncelliyor ve rekabette öne çıkmanızı sağlıyoruz.",
+    "webAnalysis": "Web Sitesi Analizi",
+    "webAnalysisDesc": "Web sitenizin performansını derinlemesine analiz ediyor, güçlü ve zayıf yönlerini belirliyoruz. Ziyaretçi davranışlarını inceliyor, dönüşüm oranlarını artırmak için veriye dayalı öneriler sunuyoruz. Teknik SEO, içerik kalitesi ve kullanıcı deneyimi gibi faktörleri değerlendirerek web sitenizin arama motorlarında daha üst sıralarda yer almasını sağlıyoruz.",
+    "contentStrategy": "İçerik Stratejisi Geliştirme",
+    "contentStrategyDesc": "Hedef kitlenizi etkileyecek ve markanızın değerini yansıtacak özgün içerik stratejileri geliştiriyoruz. Blog yazıları, makaleler, videolar ve infografikler gibi farklı içerik formatlarıyla marka bilinirliğinizi artırmanıza yardımcı oluyoruz. SEO uyumlu içerikler üreterek web sitenizin organik trafik ve potansiyel müşteri kazanmasını sağlıyoruz.",
+    "socialMedia": "Sosyal Medya Yönetimi",
+    "socialMediaDesc": "Markanızın sosyal medya hesaplarını profesyonelce yönetiyor, etkileşim ve görünürlüğünüzü artırıyoruz. Hedef kitlenize uygun içerikler paylaşıyor, reklam kampanyaları yönetiyor ve marka itibarınızı güçlendiriyoruz. Sosyal medya platformlarındaki trendleri takip ederek markanızın dijital dünyada öne çıkmasını sağlıyoruz.",
+    "advertising": "Dijital Pazarlama",
+    "advertisingDesc": "Markanızın dijital dünyadaki varlığını güçlendirmek ve hedef kitlenize ulaşmak için etkili dijital pazarlama stratejileri geliştiriyoruz. SEO, SEM, sosyal medya pazarlaması, e-posta pazarlaması ve içerik pazarlaması gibi farklı kanalları kullanarak marka bilinirliğinizi artırıyor ve satışlarınızı yükseltiyoruz. Performans odaklı yaklaşımlarımızla yatırım getirinizi maksimize ediyoruz.",
+    "webDesign": "Web Sitesi Tasarımı",
+    "webDesignDesc": "Markanızın kimliğini yansıtan, kullanıcı dostu ve modern web siteleri tasarlıyoruz. Mobil uyumlu, SEO dostu ve etkileyici tasarımlarımızla ziyaretçilerinizin web sitenizde keyifli bir deneyim yaşamasını sağlıyoruz. İşlevselliğe ve estetiğe önem vererek markanızın dijital dünyadaki vitrinini oluşturuyoruz."
   },
   "references": {
     "title": "Referanslar",
@@ -29,7 +31,7 @@
   },
   "contact": {
     "title": "İletişim",
-    "name": "İsim",
+    "name": "İsim Soyisim",
     "email": "E-posta",
     "phone": "Telefon",
     "message": "Mesaj",
