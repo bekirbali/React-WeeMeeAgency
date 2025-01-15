@@ -15,9 +15,10 @@ const Modal = ({ isOpen, onClose, title, children }) => {
           onClick={onClose}
         />
         <motion.div
-          initial={{ scale: 0.95, opacity: 0 }}
+          initial={{ scale: 0.25, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          exit={{ scale: 0.95, opacity: 0 }}
+          exit={{ scale: 0.25, opacity: 0 }}
+          transition={{ duration: 0.3 }}
           className="relative bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[80vh] overflow-hidden z-50"
         >
           <div className="p-6 border-b border-gray-200">

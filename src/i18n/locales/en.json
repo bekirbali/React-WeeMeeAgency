@@ -6,22 +6,24 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "We Create Digital Solutions",
-    "subtitle": "Transform your business with our innovative digital solutions",
+    "title": "Creative solutions, impactful results.",
+    "subtitle": "Discover the power of the digital world and unleash your potential.",
     "cta": "Get Started"
   },
   "services": {
     "title": "Our Services",
-    "seoAudit": "SEO AUDIT",
-    "seoAuditDesc": "We analyze your website's search engine optimization in detail and provide recommendations to increase your visibility.",
-    "webAnalysis": "WEBSITE ANALYSIS",
-    "webAnalysisDesc": "We comprehensively examine your site's performance, user experience, and technical infrastructure to identify improvement opportunities.",
-    "contentStrategy": "CONTENT STRATEGY DEVELOPMENT",
-    "contentStrategyDesc": "We create content strategies tailored to your brand that will impact your target audience and increase conversion rates.",
-    "socialMedia": "SOCIAL MEDIA MANAGEMENT",
-    "socialMediaDesc": "We effectively represent your brand on social media platforms, increasing community engagement and brand awareness.",
-    "advertising": "ADVERTISING CAMPAIGNS",
-    "advertisingDesc": "We plan and manage effective and measurable digital advertising campaigns tailored to your goals."
+    "seoAudit": "SEO Optimization",
+    "seoAuditDesc": "We perform all necessary SEO activities to ensure your website ranks high in search engines. Through keyword research, technical SEO, content optimization, and backlink strategies, we boost your organic traffic. By continuously monitoring your website's performance, we update your SEO strategy and help you stay ahead of the competition.",
+    "webAnalysis": "Website Analysis",
+    "webAnalysisDesc": "We conduct an in-depth analysis of your website's performance, identifying its strengths and weaknesses. By examining visitor behavior, we provide data-driven recommendations to improve conversion rates. We evaluate factors such as technical SEO, content quality, and user experience to help your website rank higher in search engines.",
+    "contentStrategy": "Content Strategy Development",
+    "contentStrategyDesc": "We develop unique content strategies that will engage your target audience and reflect your brand's value. Using various content formats like blog posts, articles, videos, and infographics, we help increase your brand's visibility. By producing SEO-friendly content, we enable your website to gain organic traffic and attract potential customers.",
+    "socialMedia": "Social Media Management",
+    "socialMediaDesc": "We professionally manage your brand's social media accounts, increasing your engagement and visibility. We share content tailored to your target audience, manage advertising campaigns, and strengthen your brand's reputation. By following trends on social media platforms, we ensure your brand stands out in the digital world.",
+    "advertising": "Digital Marketing",
+    "advertisingDesc": "We develop effective digital marketing strategies to strengthen your brand's online presence and reach your target audience. Using various channels such as SEO, SEM, social media marketing, email marketing, and content marketing, we enhance your brand awareness and increase your sales. With our performance-focused approaches, we maximize your return on investment.",
+    "webDesign": "Website Design",
+    "webDesignDesc": "We design user-friendly, modern websites that reflect your brand's identity. Our mobile-friendly, SEO-friendly, and visually impressive designs ensure that your visitors have an enjoyable experience on your website. By prioritizing functionality and aesthetics, we create your brand's digital storefront."
   },
   "references": {
     "title": "References",
@@ -29,7 +31,7 @@
   },
   "contact": {
     "title": "Contact Us",
-    "name": "Name",
+    "name": "First Name & Last Name",
     "email": "Email",
     "phone": "Phone",
     "message": "Message",

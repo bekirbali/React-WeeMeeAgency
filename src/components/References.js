@@ -1,22 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { arcelik, mercedes, cola } from "../assets";
+import { alarga, sorbil, suzenia } from "../assets";
 
 // Placeholder logos (replace with actual company logos)
 // const logos = Array(3).fill("/logo-placeholder.png");
 const logos = [
   {
-    name: "Arcelik",
-    logo: arcelik,
+    name: "Alarga",
+    logo: alarga,
   },
   {
-    name: "Mercedes",
-    logo: mercedes,
+    name: "Sorbil",
+    logo: sorbil,
   },
   {
-    name: "Cola",
-    logo: cola,
+    name: "Suzenia",
+    logo: suzenia,
   },
 ];
 
@@ -57,7 +57,7 @@ const References = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="w-full flex items-center justify-center"
             >
-              <div className="w-full max-w-[250px] aspect-[4/3] flex items-center justify-center grayscale hover:grayscale-0 transition-all cursor-pointer p-4">
+              <div className="w-full max-w-[250px] aspect-[4/3] flex items-center justify-center transition-all cursor-pointer p-4">
                 <img
                   src={logo.logo}
                   alt={logo.name}
