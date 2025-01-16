@@ -102,5 +102,10 @@
       "title": "İletişim",
       "content": "Bu Kullanım Şartları ile ilgili sorularınız için lütfen iletişim formu aracılığıyla bizimle iletişime geçin."
     }
+  },
+  "kvkk": {
+    "personal": "Kişisel verileriniz,",
+    "text": "Aydınlatma Metni",
+    "process": "kapsamında işlenmektedir."
   }
 }

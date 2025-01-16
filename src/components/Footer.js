@@ -108,7 +108,7 @@ const Footer = () => {
             <div className="text-gray-300 text-sm cursor-default">
               © {currentYear} WeeMeAgency. {t("footer.rights")}
             </div>
-            <div className="flex space-x-4 text-sm">
+            {/* <div className="flex space-x-4 text-sm">
               <Link
                 to="home"
                 spy={true}
@@ -129,7 +129,7 @@ const Footer = () => {
               >
                 {t("footer.terms")}
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

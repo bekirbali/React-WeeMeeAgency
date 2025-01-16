@@ -102,5 +102,10 @@
       "title": "Contact",
       "content": "For any questions regarding these Terms of Service, please contact us through the provided contact form."
     }
+  },
+  "kvkk": {
+    "personal": "Your personal data is",
+    "text": "Disclosure Text.",
+    "process": "processed within the scope of the"
   }
 }
