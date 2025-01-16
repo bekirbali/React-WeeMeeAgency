@@ -10,7 +10,7 @@ import {
 import Modal from "./Modal";
 
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,8 +19,7 @@ const Contact = () => {
     privacyPolicy: false,
   });
 
-  const [showPrivacyModal, setShowPrivacyModal] = useState(false);
-  const [showTermsModal, setShowTermsModal] = useState(false);
+  const [showKvkkModal, setShowKvkkModal] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -165,28 +164,37 @@ const Contact = () => {
                   className="mt-1"
                   required
                 />
-                <label
-                  htmlFor="privacyPolicy"
-                  className="text-sm text-gray-600"
-                >
-                  {t("contact.privacyPolicyStart")}{" "}
-                  <button
-                    type="button"
-                    onClick={() => setShowPrivacyModal(true)}
-                    className="text-primary hover:underline"
+                {i18n.language === "tr" ? (
+                  <label
+                    htmlFor="privacyPolicy"
+                    className="text-sm text-gray-600"
                   >
-                    {t("footer.privacy")}
-                  </button>{" "}
-                  {t("contact.and")}{" "}
-                  <button
-                    type="button"
-                    onClick={() => setShowTermsModal(true)}
-                    className="text-primary hover:underline"
+                    {t("kvkk.personal")}{" "}
+                    <button
+                      type="button"
+                      onClick={() => setShowKvkkModal(true)}
+                      className="text-primary underline"
+                    >
+                      {t("kvkk.text")}
+                    </button>{" "}
+                    {t("kvkk.process")} *
+                  </label>
+                ) : (
+                  <label
+                    htmlFor="privacyPolicy"
+                    className="text-sm text-gray-600"
                   >
-                    {t("footer.terms")}
-                  </button>{" "}
-                  {t("contact.privacyPolicyEnd")} *
-                </label>
+                    {t("kvkk.personal")} {t("kvkk.process")}{" "}
+                    <button
+                      type="button"
+                      onClick={() => setShowKvkkModal(true)}
+                      className="text-primary underline"
+                    >
+                      {t("kvkk.text")}
+                    </button>{" "}
+                    *
+                  </label>
+                )}
               </div>
               <button type="submit" className="btn-primary w-full">
                 {t("contact.send")}
@@ -219,13 +227,13 @@ const Contact = () => {
                 <div className="flex items-start space-x-4">
                   <PhoneIcon className="h-6 w-6 text-primary flex-shrink-0" />
                   <div>
-                    <p className="text-gray-600">+1 (234) 567-8900</p>
+                    <p className="text-gray-600">+90 538 489 27 55</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <EnvelopeIcon className="h-6 w-6 text-primary flex-shrink-0" />
                   <div>
-                    <p className="text-gray-600">contact@weemeagency.com</p>
+                    <p className="text-gray-600">info@weemeagency.com</p>
                   </div>
                 </div>
               </div>
@@ -235,7 +243,7 @@ const Contact = () => {
             <div>
               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40489.35547171636!2d28.92614065270649!3d41.03861390783588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e7a7777c43%3A0x4c76cf3dcc8b330b!2sGalata%20Kulesi!5e0!3m2!1str!2str!4v1736768242670!5m2!1str!2str"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.1848774222844!2d29.094009076353185!3d40.999326519975526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac881d8b5f58b%3A0x9e5dca387091b318!2sNidakule%20Ata%C5%9Fehir%20Bat%C4%B1!5e0!3m2!1str!2str!4v1737023829572!5m2!1str!2str"
                   width="600"
                   height="450"
                   allowFullScreen=""
@@ -252,6 +260,220 @@ const Contact = () => {
 
       {/* Privacy Policy Modal */}
       <Modal
+        isOpen={showKvkkModal}
+        onClose={() => setShowKvkkModal(false)}
+        title={t("kvkk.text")}
+      >
+        <div className="prose prose-sm">
+          <h2 className="font-extrabold text-xl">
+            KİŞİSEL VERİLERİN İŞLENMESİ VE KORUNMASI POLİTİKASI
+          </h2>
+          <h3 className="text-lg font-bold">1. Giriş</h3>
+          <p>
+            İşbu Kişisel Verilerin İşlenmesi ve Korunması Politikası
+            (“Politika”), Weemeagency’nin 6698 Sayılı Kişisel Verilerin
+            Korunması Kanunu ve ilgili mevzuat ile hayata geçirilen veri koruma
+            yükümlülüklerini yerine getirilmekle beraber ek olarak kişisel
+            verileri işleme aşamasında Weemeagency içinde ve/veya Weemeagency
+            tarafından uyulması gereken esasları belirlemektedir.
+          </p>
+          <h3 className="text-lg font-bold">2. Tanımlar</h3>
+          <ul className="list-disc list-inside">
+            <li>
+              <span className="font-semibold">Açık Rıza: </span>Belirli bir
+              konuya ilişkin bilgilendirmeye dayanan ve özgür iradeyle açıklanan
+              rızayı,
+            </li>
+            <li>
+              <span className="font-semibold">Anonim Hale Getirme: </span>
+              Kişisel verinin, kişisel veri niteliğini kaybedecek ve bu durumun
+              geri alınamayacağı şekilde değiştirilmesini,
+            </li>
+            <li>
+              <span className="font-semibold">Çalışan: </span>Görev ve ünvanına
+              bakılmaksızın Weemeagency personelini,
+            </li>
+            <li>
+              <span className="font-semibold">Şirket: </span>Weemeagency’yi,
+            </li>
+            <li>
+              <span className="font-semibold">Kanun: </span>6698 sayılı Kişisel
+              Verilerin Korunması Kanunu’nu,
+            </li>
+            <li>
+              <span className="font-semibold">Kişisel Veri Sahibi: </span>
+              Kişisel verisi işlenen gerçek kişiyi,
+            </li>
+            <li>
+              <span className="font-semibold">Kişisel Veri: </span>Kimliği
+              belirli veya belirlenebilir gerçek kişiye ilişkin her türlü
+              bilgiyi,
+            </li>
+            <li>
+              <span className="font-semibold">
+                Kişisel Verilerin İşlenmesi:{" "}
+              </span>
+              Kişisel verilerin tamamen veya kısmen otomatik olan ya da herhangi
+              bir veri kayıt sisteminin parçası olmak kaydıyla otomatik olmayan
+              yollarla elde edilmesi, kaydedilmesi, depolanması, muhafaza
+              edilmesi, değiştirilmesi, yeniden düzenlenmesi, açıklanması,
+              aktarılması, devralınması, elde edilebilir hâle getirilmesi,
+              sınıflandırılması ya da kullanılmasının engellenmesi gibi veriler
+              üzerinde gerçekleştirilen her türlü işlemi,
+            </li>
+            <li>
+              <span className="font-semibold">
+                Özel Nitelikli Kişisel Veri:{" "}
+              </span>
+              Kişilerin ırkı, etnik kökeni, siyasi düşüncesi, felsefi inancı,
+              dini, mezhebi veya diğer inançları, kılık ve kıyafeti, dernek,
+              vakıf ya da sendika üyeliği, sağlığı, cinsel hayatı, ceza
+              mahkûmiyeti ve güvenlik tedbirleriyle ilgili verileri ile
+              biyometrik ve genetik verileri,
+            </li>
+            <li>
+              <span className="font-semibold">Veri Sorumlusu: </span>Kişisel
+              verilerin işleme amaçlarını ve vasıtalarını belirleyen, veri kayıt
+              sisteminin kurulmasında ve yönetilmesinden sorumlu Weemeagency’yi
+              ifade eder.
+            </li>
+          </ul>
+          <h3 className="text-lg font-bold">
+            3. Kişisel Verilerin İşlenmesine İlişkin İlkeler
+          </h3>
+          <p>
+            Weemeagency bakımından öncelikle önem arz eden hususların başında,
+            kişisel verilerin işlenmesinde mevzuatta öngörülen genel ilkelere
+            uygun davranılması gelmektedir. Bu kapsamda Anayasa, Kanun ve ilgili
+            diğer mevzuata uygun olarak kişisel verilerin işlenmesinde aşağıda
+            sıralanan ilkelere uygun hareket etmektedir.
+          </p>
+          <h4 className="font-bold">
+            3.1. Hukuka ve Dürüstlük Kuralına Uygun Kişisel Veri İşleme
+            Faaliyetlerinde Bulunma
+          </h4>
+          <p>
+            Weemeagency, kişisel verilerin işlenmesi faaliyetleri kapsamında
+            hukuka ve dürüstlük kurallarına uygun hareket etmektedir.
+            Weemeagency, kişisel verilerin işlenmesinde orantılılık ve
+            gereklilik prensiplerini uygulamaya koyarak sadece gerektiği kadar
+            kişisel veriyi, veri işleme amaçlarına uygun düşecek seviyede
+            işlemektedir.
+          </p>
+          <h4 className="font-bold">
+            3.2. Kişisel Verilerin Doğru ve Gerektiğinde Güncel Olmasını Sağlama
+          </h4>
+          <p>
+            Weemeagency kişisel veri sahiplerinin temel haklarını ve kendi meşru
+            menfaatlerini dikkate alarak işlediği kişisel verilerin doğru ve
+            güncel olmasını sağlamakta ve bu doğrultuda gerekli tedbirleri
+            alarak bunları sağlamaya yönelik sistemleri kurmaktadır.
+          </p>
+          <h4 className="font-bold">
+            3.3. Belirli, Açık ve Meşru Amaçlarla İşleme
+          </h4>
+          <p>
+            Weemeagency, kişisel verileri yürütmekte olduğu faaliyetlerle
+            bağlantılı olarak ve gerekli olduğu ölçüde meşru ve hukuka uygun
+            sebeplerle işlemektedir.
+          </p>
+          <h4 className="font-bold">
+            3.4. İşlendikleri Amaçla Bağlantılı, Sınırlı ve Ölçülü Olma
+          </h4>
+          <p>
+            Weemeagency, kişisel verileri belirlenen amaçların
+            gerçekleştirilebilmesine elverişli bir biçimde işlemekte ve amacın
+            gerçekleştirilmesiyle ilgili olmayan veya ihtiyaç duyulmayan kişisel
+            verilerin işlenmesinden kaçınmaktadır.
+          </p>
+          <h4 className="font-bold">
+            3.5. İlgili Mevzuatta Öngörülen veya İşlendikleri Amaç İçin Gerekli
+            Olan Süre Kadar Muhafaza Etme
+          </h4>
+          <p>
+            Weemeagency, kişisel verileri yalnızca kanunlarda öngörülen süreler
+            ile veya işlendikleri amaç ile sınırlı olarak muhafaza etmektedir.
+            Bu kapsamda, ilgili mevzuatta kişisel verilerin saklanması için
+            belirlenen sürelere uygun davranmaktadır. Süre belirlenmeyen
+            durumlarda, kişisel veriler işlendikleri amaç için gerekli olan süre
+            kadar muhafaza edilmektedir.
+          </p>
+          <h4 className="font-bold">
+            3.6. Kişisel Verilerin Aktarımında Uyulması Gerekenler
+          </h4>
+          <p>
+            Weemeagency, kişisel verilerin, özel nitelikli kişisel veriler
+            dâhil, aktarılması bakımından aşağıda yer verilen kurallara uygun
+            davranmaktadır.
+          </p>
+          <h4 className="font-bold">
+            3.6.1. Yurtiçinde Kişisel Verilerin Aktarımı
+          </h4>
+          <p>
+            Weemeagency, kişisel verileri, Kanunun sekizinci maddesi gereğince
+            kişisel veri işleme amaçlarına uygun olarak ve gerekli güvenlik
+            önlemlerini alarak üçüncü kişilere aktarmaktadır
+          </p>
+          <h4 className="font-bold">
+            3.6.2. Yurtdışına Kişisel Verilerin Aktarılması
+          </h4>
+          <p>
+            Weemeagency, tarafından sadece internet sitesi kullanıcılarından
+            elde edilen kişisel veriler bulut depolamaları ile sınırlı olarak
+            yurt dışına aktarılabilmektedir. Yurt dışına kişisel veri
+            aktarılması zorunluluğu doğması halinde ise Kanunun dokuzuncu
+            maddesinde öngörülen düzenlemelere uygun olarak gerekli tüm önlemler
+            alındıktan sonra veri aktarımı yapılacaktır
+          </p>
+          <h3 className="text-lg font-bold">
+            4. Weemeagency’nin Kişisel Verilerin Korunması ve İşlenmesine
+            İlişkin Yükümlülükleri
+          </h3>
+          <h4 className="font-bold">
+            4.1. Kişisel Veri Sahibini Aydınlatma Yükümlülüğü
+          </h4>
+          <p>
+            Weemeagency, kişisel verilerin elde edilmesi sırasında, kişisel veri
+            sahibini, aşağıda yer alan konularda aydınlatmaktadır:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>(1) Veri Sorumlusunun kimliği,</li>
+            <li>(2) Kişisel verilerin hangi amaçla işleneceği,</li>
+            <li>
+              (3) Kişisel verilerin kimlere ve hangi amaçla aktarılabileceği,
+            </li>
+            <li>(4) Kişisel veri toplamanın yöntemi ve hukuki sebepleri,</li>
+            <li>(5) Kişisel veri sahibinin sahip olduğu hakları.</li>
+          </ul>
+          <h4 className="font-bold">
+            4.2. Kişisel Verilerin Güvenliğini Sağlama Yükümlülüğü
+          </h4>
+          <p>
+            Kişisel Verilerin güvenliği, saklama ve imha politikamıza uygun
+            olarak sağlanmaktadır.
+          </p>
+          <p>
+            Weemeagency, Kanun’un 12. maddesine uygun olarak, işlemekte olduğu
+            kişisel verilerin hukuka aykırı olarak işlenmesini ve bu verilere
+            hukuka aykırı olarak erişilmesini önlemek ve verilerin muhafazasını
+            sağlamak için uygun güvenlik düzeyini sağlamaya yönelik gerekli
+            teknik ve idari tedbirleri almaktadır.
+          </p>
+          <h4 className="font-bold">
+            4.3. Kişisel Veri Sahibini Bilgilendirme Yükümlülüğü
+          </h4>
+          <p>
+            Kişisel veri sahipleri, gerek duydukları hallerde yazılı olarak veya
+            Kişisel Verileri Koruma Kurulu’nun belirleyeceği diğer yöntemlerle
+            başvuruda bulunarak kendi verilerine ilişkin bilgi talebinde bulunma
+            hakları vardır. Bu kapsamda Weemeagency, kişisel veri sahiplerinin
+            haklarının değerlendirilmesi ve kişisel veri sahiplerine gereken
+            bilgilendirmenin yapılması için Kanun’un 13. maddesine uygun olarak
+            gerekli mekanizmaları oluşturmuştur.
+          </p>
+        </div>
+      </Modal>
+      {/* <Modal
         isOpen={showPrivacyModal}
         onClose={() => setShowPrivacyModal(false)}
         title={t("footer.privacy")}
@@ -270,10 +492,10 @@ const Contact = () => {
           <h3>{t("privacyPolicy.contact.title")}</h3>
           <p>{t("privacyPolicy.contact.content")}</p>
         </div>
-      </Modal>
+      </Modal> */}
 
       {/* Terms of Service Modal */}
-      <Modal
+      {/* <Modal
         isOpen={showTermsModal}
         onClose={() => setShowTermsModal(false)}
         title={t("footer.terms")}
@@ -292,7 +514,7 @@ const Contact = () => {
           <h3>{t("terms.contact.title")}</h3>
           <p>{t("terms.contact.content")}</p>
         </div>
-      </Modal>
+      </Modal> */}
     </section>
   );
 };
