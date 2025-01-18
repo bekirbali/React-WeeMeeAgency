@@ -112,7 +112,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: 120 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="w-[25%]"
+          className="w-[50%]"
         >
           {/* <div className="flex gap-4 justify-center md:justify-start">
             <Link
@@ -143,7 +143,7 @@ const Hero = () => {
               smooth={true}
               offset={-64}
               duration={50}
-              className="btn-primary cursor-pointer mx-auto"
+              className="btn-primary cursor-pointer mx-auto md:scale-150"
             >
               {t("hero.cta")}
             </Link>
