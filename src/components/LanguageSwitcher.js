@@ -23,8 +23,12 @@ const LanguageSwitcher = () => {
     >
       <div className={`toggle-switch ${isEnglish ? "active" : ""}`}>
         <button className="toggle-knob" />
-        <button className="label left">TR</button>
-        <button className="label right">EN</button>
+        <button className={`label left ${isEnglish ? "" : "text-white"}`}>
+          TR
+        </button>
+        <button className={`${isEnglish ? "text-white" : ""} label right`}>
+          EN
+        </button>
       </div>
     </div>
   );
