@@ -61,7 +61,7 @@ const References = () => {
                 <img
                   src={logo.logo}
                   alt={logo.name}
-                  className="max-w-full max-h-full object-cover"
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
             </motion.div>
