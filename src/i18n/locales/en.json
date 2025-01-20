@@ -3,7 +3,8 @@
     "home": "Home",
     "services": "Services",
     "references": "References",
-    "contact": "Contact"
+    "contact": "Contact",
+    "faq": "FAQ"
   },
   "hero": {
     "title": "Creative solutions impactful results",
@@ -107,5 +108,30 @@
     "personal": "Your personal data is",
     "text": "Disclosure Text.",
     "process": "processed within the scope of the"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": {
+      "services": {
+        "question": "What services do you provide?",
+        "answer": "We provide a wide range of digital marketing services including web design, social media management, content creation, and SEO optimization."
+      },
+      "timeline": {
+        "question": "How long does a typical project take?",
+        "answer": "Project timelines vary depending on complexity and scope. A typical website project can take 4-8 weeks, while ongoing marketing campaigns are customized to your needs."
+      },
+      "international": {
+        "question": "Do you work with international clients?",
+        "answer": "Yes, we work with clients globally and have experience managing projects across different time zones and cultures."
+      },
+      "pricing": {
+        "question": "What is your pricing structure?",
+        "answer": "Our pricing is project-based and depends on your specific needs. We provide detailed quotes after initial consultation."
+      },
+      "existing": {
+        "question": "Can you help with existing projects?",
+        "answer": "Yes, we can take over existing projects and help improve or maintain them according to your requirements."
+      }
+    }
   }
 }

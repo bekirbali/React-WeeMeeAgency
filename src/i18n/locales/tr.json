@@ -3,7 +3,8 @@
     "home": "Ana Sayfa",
     "services": "Hizmetler",
     "references": "Referanslar",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "faq": "SSS"
   },
   "hero": {
     "title": "Yaratıcı çözümler etkili sonuçlar",
@@ -107,5 +108,30 @@
     "personal": "Kişisel verileriniz,",
     "text": "Aydınlatma Metni",
     "process": "kapsamında işlenmektedir."
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "items": {
+      "services": {
+        "question": "Hangi hizmetleri sunuyorsunuz?",
+        "answer": "Web tasarımı, sosyal medya yönetimi, içerik oluşturma ve SEO optimizasyonu dahil olmak üzere geniş bir yelpazede dijital pazarlama hizmetleri sunuyoruz."
+      },
+      "timeline": {
+        "question": "Tipik bir proje ne kadar sürer?",
+        "answer": "Proje süreleri karmaşıklığa ve kapsamına göre değişir. Tipik bir web sitesi projesi 4-8 hafta sürerken, devam eden pazarlama kampanyaları ihtiyaçlarınıza göre özelleştirilir."
+      },
+      "international": {
+        "question": "Uluslararası müşterilerle çalışıyor musunuz?",
+        "answer": "Evet, global olarak müşterilerle çalışıyoruz ve farklı saat dilimleri ve kültürler arasında proje yönetimi konusunda deneyimliyiz."
+      },
+      "pricing": {
+        "question": "Fiyatlandırma yapınız nasıl?",
+        "answer": "Fiyatlandırmamız proje bazlıdır ve özel ihtiyaçlarınıza bağlıdır. İlk görüşmeden sonra detaylı teklifler sunuyoruz."
+      },
+      "existing": {
+        "question": "Mevcut projelere yardımcı olabiliyor musunuz?",
+        "answer": "Evet, mevcut projeleri devralabilir ve gereksinimlerinize göre iyileştirebilir veya sürdürebiliriz."
+      }
+    }
   }
 }

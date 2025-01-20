@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -7,8 +8,10 @@ import LanguageSwitcher from "./LanguageSwitcher";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
-  const navLinks = [
+  const scrollLinks = [
     { name: t("navbar.home"), to: "home" },
     { name: t("navbar.services"), to: "services" },
     { name: t("navbar.references"), to: "references" },
@@ -20,24 +23,39 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="text-2xl font-bold text-primary cursor-pointer">
-            <Link to="home">WeeMeAgency</Link>
+            <RouterLink to="/">WeeMeAgency</RouterLink>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.to}
-                spy={true}
-                smooth={true}
-                offset={-64}
-                duration={50}
+            {isHome ? (
+              scrollLinks.map((link) => (
+                <ScrollLink
+                  key={link.name}
+                  to={link.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-64}
+                  duration={50}
+                  className="text-gray-600 hover:text-primary cursor-pointer transition-colors"
+                >
+                  {link.name}
+                </ScrollLink>
+              ))
+            ) : (
+              <RouterLink
+                to="/"
                 className="text-gray-600 hover:text-primary cursor-pointer transition-colors"
               >
-                {link.name}
-              </Link>
-            ))}
+                {t("navbar.home")}
+              </RouterLink>
+            )}
+            <RouterLink
+              to="/faq"
+              className="text-gray-600 hover:text-primary cursor-pointer transition-colors"
+            >
+              {t("navbar.faq")}
+            </RouterLink>
             <LanguageSwitcher />
           </div>
 
@@ -58,19 +76,36 @@ const Navbar = () => {
         {mobileMenuOpen && (
           <div className="md:hidden py-4">
             <div className="flex flex-col space-y-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.to}
-                  spy={true}
-                  smooth={true}
-                  offset={-64}
+              {isHome ? (
+                scrollLinks.map((link) => (
+                  <ScrollLink
+                    key={link.name}
+                    to={link.to}
+                    spy={true}
+                    smooth={true}
+                    offset={-64}
+                    className="text-gray-600 hover:text-primary cursor-pointer transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </ScrollLink>
+                ))
+              ) : (
+                <RouterLink
+                  to="/"
                   className="text-gray-600 hover:text-primary cursor-pointer transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  {link.name}
-                </Link>
-              ))}
+                  {t("navbar.home")}
+                </RouterLink>
+              )}
+              <RouterLink
+                to="/faq"
+                className="text-gray-600 hover:text-primary cursor-pointer transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                FAQ
+              </RouterLink>
               <div className="pt-2">
                 <LanguageSwitcher />
               </div>
