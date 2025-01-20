@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -7,6 +8,20 @@ import References from "./components/References";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import LoadingScreen from "./components/LoadingScreen";
+import FAQ from "./components/FAQ";
+
+function MainPage() {
+  return (
+    <>
+      <main>
+        <Hero />
+        <Services />
+        <References />
+        <Contact />
+      </main>
+    </>
+  );
+}
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,20 +38,20 @@ function App() {
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <References />
-        <Contact />
-      </main>
-      <Footer />
-    </motion.div>
+    <Router>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/faq" element={<FAQ />} />
+        </Routes>
+        <Footer />
+      </motion.div>
+    </Router>
   );
 }
 

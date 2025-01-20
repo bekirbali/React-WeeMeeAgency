@@ -57,11 +57,11 @@ const References = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="w-full flex items-center justify-center"
             >
-              <div className="w-full max-w-[250px] aspect-[4/3] flex items-center justify-center transition-all cursor-pointer p-4">
+              <div className="w-full max-w-[250px] flex items-center justify-center transition-all cursor-pointer p-4">
                 <img
                   src={logo.logo}
                   alt={logo.name}
-                  className="max-w-full max-h-full object-contain"
+                  className="max-w-full max-h-full object-cover"
                 />
               </div>
             </motion.div>
