@@ -112,25 +112,85 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "items": {
-      "services": {
-        "question": "What services do you provide?",
-        "answer": "We provide a wide range of digital marketing services including web design, social media management, content creation, and SEO optimization."
+      "seo-nedir": {
+        "question": "What is SEO and why is it important?",
+        "answer": "SEO (Search Engine Optimization) is a set of strategies and techniques that help your website rank higher in search engine results. It is important because it increases your website's organic traffic, enabling you to reach more people."
       },
-      "timeline": {
-        "question": "How long does a typical project take?",
-        "answer": "Project timelines vary depending on complexity and scope. A typical website project can take 4-8 weeks, while ongoing marketing campaigns are customized to your needs."
+      "seo-calismalari-nelerdir": {
+        "question": "What are SEO activities?",
+        "answer": "Activities such as keyword research, technical SEO, content optimization, and backlink strategies are part of SEO."
       },
-      "international": {
-        "question": "Do you work with international clients?",
-        "answer": "Yes, we work with clients globally and have experience managing projects across different time zones and cultures."
+      "seo-calismalari-ne-kadar-surede-sonuc-verir": {
+        "question": "How long do SEO activities take to produce results?",
+        "answer": "SEO activities generally take 3-6 months. This time depends on the complexity of your website and the size of your target audience."
       },
-      "pricing": {
-        "question": "What is your pricing structure?",
-        "answer": "Our pricing is project-based and depends on your specific needs. We provide detailed quotes after initial consultation."
+      "seo-hizmeti-almanin-faydalari": {
+        "question": "What are the benefits of hiring SEO services?",
+        "answer": "Increases your website's organic traffic, enhances your brand awareness, allows you to reach more potential customers, and increases your sales."
       },
-      "existing": {
-        "question": "Can you help with existing projects?",
-        "answer": "Yes, we can take over existing projects and help improve or maintain them according to your requirements."
+      "web-sitesi-analizi-neden-onemlidir": {
+        "question": "Why is website analysis important? ",
+        "answer": "By analyzing your website's performance and visitor behavior, it helps you improve your website and take necessary steps to achieve your goals."
+      },
+      "web-sitesi-analizi-kapsaminda-neler-yapilir": {
+        "question": "What is included in website analysis?",
+        "answer": "Visitor traffic, sources, bounce rate (immediate exit rate), conversion rates, and other data are analyzed."
+      },
+      "web-sitesi-analizi-hangi-araclarla-yapilir": {
+        "question": "What tools are used for website analysis?",
+        "answer": "Tools such as Google Analytics, Google Search Console are used for website analysis."
+      },
+      "web-sitesi-analizinin-faydalari": {
+        "question": "What are the benefits of website analysis?",
+        "answer": "It helps you identify your website's strengths and weaknesses, improve user experience, and increase conversion rates."
+      },
+      "icerik-stratejisi-nedir": {
+        "question": "What is content strategy?",
+        "answer": "It is the process of planning, creating, and publishing content that will engage your target audience and reflect your brand's value."
+      },
+      "icerik-stratejisi-neden-onemlidir": {
+        "question": "Why is content strategy important?",
+        "answer": "It increases your brand awareness, boosts your website's organic traffic, attracts potential customers, and creates customer loyalty."
+      },
+      "hangi-tür-icerikler-uretiyorsunuz": {
+        "question": "What types of content do you produce?",
+        "answer": "We produce content in various formats such as blog posts, articles, videos, infographics, and e-books."
+      },
+      "icerikler-seo-uyumlu-mu-olacak": {
+        "question": "Are the contents SEO compatible?",
+        "answer": "Yes, the contents will be prepared according to SEO rules and will help your website rank higher in search engines."
+      },
+      "sosyal-medya-yonetimi-nedir": {
+        "question": "What is social media management?",
+        "answer": "We manage your brand's social media accounts, share content, run advertising campaigns, track interactions, and report on results."
+      },
+      "hangi-sosyal-medya-platformlarinda-hizmet-veriyorsunuz": {
+        "question": "What social media platforms do you offer services on?",
+        "answer": "We offer services on popular platforms such as Facebook, Instagram, Twitter, LinkedIn, and YouTube."
+      },
+      "sosyal-medya-yonetiminin-faydalari": {
+        "question": "What are the benefits of social media management?",
+        "answer": "It increases your brand awareness, allows you to interact with your target audience, attracts traffic to your website, and increases your sales."
+      },
+      "sosyal-medya-stratejiniz-nedir": {
+        "question": "What is your social media strategy?",
+        "answer": "We develop a customized social media strategy tailored to your brand's goals and target audience."
+      },
+      "dijital-pazarlama-nedir": {
+        "question": "What is digital marketing?",
+        "answer": "It is all marketing activities conducted through the internet and digital technologies."
+      },
+      "dijital-pazarlama-hizmetleri-nelerdir": {
+        "question": "What digital marketing services do you offer?",
+        "answer": "We offer services such as SEO, SEM, social media marketing, email marketing, and content marketing."
+      },
+      "dijital-pazarlama-calismalarinin-faydalari-nelerdir": {
+        "question": "What are the benefits of digital marketing activities?",
+        "answer": "It increases your brand awareness, attracts traffic to your website, attracts potential customers, and increases your sales."
+      },
+      "dijital-pazarlama-stratejiniz-nedir": {
+        "question": "What is your digital marketing strategy?",
+        "answer": "We develop a customized digital marketing strategy tailored to your brand's goals and target audience."
       }
     }
   }
