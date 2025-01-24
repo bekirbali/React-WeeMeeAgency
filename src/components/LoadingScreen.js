@@ -33,17 +33,17 @@ const LoadingScreen = () => {
   };
 
   return (
-    <div className="fixed inset-0 bg-white flex flex-col items-center justify-center gap-8">
+    <div className="fixed inset-0 bg-white flex flex-col items-center justify-center gap-8 md:gap-4">
       <motion.img
         src={weemeelogo}
         alt="WeeMe Logo"
-        className="w-48 md:w-64"
+        className="w-36 md:w-48"
         variants={logoVariant}
         initial="hidden"
         animate="visible"
       />
       <motion.div
-        className="flex items-center justify-center font-bold text-[40px] md:text-[144px] text-primary"
+        className="flex items-center justify-center font-bold text-4xl md:text-[128px] text-primary"
         variants={container}
         initial="hidden"
         animate="visible"
