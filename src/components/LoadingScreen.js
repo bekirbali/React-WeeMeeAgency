@@ -24,11 +24,11 @@ const LoadingScreen = () => {
   };
 
   const logoVariant = {
-    hidden: { opacity: 0, scale: 0.3 },
+    hidden: { opacity: 0, scale: 0.2 },
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 1 },
+      transition: { duration: 1.5 },
     },
   };
 
@@ -37,23 +37,11 @@ const LoadingScreen = () => {
       <motion.img
         src={weemeelogo}
         alt="WeeMe Logo"
-        className="w-36 md:w-48"
+        className="w-64 md:w-[480px]"
         variants={logoVariant}
         initial="hidden"
         animate="visible"
       />
-      <motion.div
-        className="flex items-center justify-center font-bold text-4xl md:text-[128px] text-primary"
-        variants={container}
-        initial="hidden"
-        animate="visible"
-      >
-        {letters.map((letter, index) => (
-          <motion.span key={index} variants={child}>
-            {letter === " " ? "\u00A0" : letter}
-          </motion.span>
-        ))}
-      </motion.div>
     </div>
   );
 };
