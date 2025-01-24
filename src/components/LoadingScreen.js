@@ -43,7 +43,7 @@ const LoadingScreen = () => {
         animate="visible"
       />
       <motion.div
-        className="flex items-center justify-center font-bold text-5xl md:text-[144px] text-primary"
+        className="flex items-center justify-center font-bold text-[40px] md:text-[144px] text-primary"
         variants={container}
         initial="hidden"
         animate="visible"
