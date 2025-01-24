@@ -112,11 +112,13 @@ const FAQ = () => {
       answer: t("faq.items.dijital-pazarlama-hizmetleri-nelerdir.answer"),
     },
     {
-      key: "dijital-pazarlama-calismalarinin-faydalari",
+      key: "dijital-pazarlama-calismalarinin-faydalari-nelerdir",
       question: t(
-        "faq.items.dijital-pazarlama-calismalarinin-faydalari.question"
+        "faq.items.dijital-pazarlama-calismalarinin-faydalari-nelerdir.question"
       ),
-      answer: t("faq.items.dijital-pazarlama-calismalarinin-faydalari.answer"),
+      answer: t(
+        "faq.items.dijital-pazarlama-calismalarinin-faydalari-nelerdir.answer"
+      ),
     },
     {
       key: "dijital-pazarlama-stratejiniz-nedir",
