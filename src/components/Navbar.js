@@ -4,6 +4,7 @@ import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { weemeelogo } from "../assets";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,8 +23,13 @@ const Navbar = () => {
     <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="text-2xl font-bold text-primary cursor-pointer">
-            <RouterLink to="/">WeeMeAgency</RouterLink>
+          <div className="cursor-pointer">
+            <RouterLink to="/" className="flex items-center">
+              <img src={weemeelogo} alt="WeeMeAgency Logo" className="h-12" />
+              <span className="text-2xl font-bold text-primary">
+                WeeMeAgency
+              </span>
+            </RouterLink>
           </div>
 
           {/* Desktop Menu */}

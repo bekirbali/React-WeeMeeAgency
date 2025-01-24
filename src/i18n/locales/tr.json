@@ -112,25 +112,85 @@
   "faq": {
     "title": "Sıkça Sorulan Sorular",
     "items": {
-      "services": {
-        "question": "Hangi hizmetleri sunuyorsunuz?",
-        "answer": "Web tasarımı, sosyal medya yönetimi, içerik oluşturma ve SEO optimizasyonu dahil olmak üzere geniş bir yelpazede dijital pazarlama hizmetleri sunuyoruz."
+      "seo-nedir": {
+        "question": "SEO nedir ve neden önemlidir?",
+        "answer": "SEO, web sitenizin arama motorlarında daha üst sıralarda yer almasını sağlayan bir dizi strateji ve tekniktir. Web sitenizin organik trafik alarak daha fazla kişiye ulaşması için SEO önemlidir."
       },
-      "timeline": {
-        "question": "Tipik bir proje ne kadar sürer?",
-        "answer": "Proje süreleri karmaşıklığa ve kapsamına göre değişir. Tipik bir web sitesi projesi 4-8 hafta sürerken, devam eden pazarlama kampanyaları ihtiyaçlarınıza göre özelleştirilir."
+      "seo-calismalari-nelerdir": {
+        "question": "SEO çalışmaları nelerdir?",
+        "answer": "Anahtar kelime araştırması, teknik SEO, içerik optimizasyonu, backlink stratejileri gibi çalışmalar SEO kapsamındadır."
       },
-      "international": {
-        "question": "Uluslararası müşterilerle çalışıyor musunuz?",
-        "answer": "Evet, global olarak müşterilerle çalışıyoruz ve farklı saat dilimleri ve kültürler arasında proje yönetimi konusunda deneyimliyiz."
+      "seo-calismalari-ne-kadar-surede-sonuc-verir": {
+        "question": "SEO çalışmaları ne kadar sürede sonuç verir?",
+        "answer": "SEO çalışmaları genellikle 3-6 ay sürebilir. Bu süre, web sitenizin karmaşıklığına ve hedef kitleninin büyüklüğüne bağlıdır."
       },
-      "pricing": {
-        "question": "Fiyatlandırma yapınız nasıl?",
-        "answer": "Fiyatlandırmamız proje bazlıdır ve özel ihtiyaçlarınıza bağlıdır. İlk görüşmeden sonra detaylı teklifler sunuyoruz."
+      "seo-hizmeti-almanin-faydalari": {
+        "question": "SEO hizmeti almanın faydaları nelerdir?",
+        "answer": "Web sitenizin organik trafiğini artırır, marka bilinirliğinizi yükseltir, daha fazla potansiyel müşteriye ulaşmanızı sağlar ve satışlarınızı artırır."
       },
-      "existing": {
-        "question": "Mevcut projelere yardımcı olabiliyor musunuz?",
-        "answer": "Evet, mevcut projeleri devralabilir ve gereksinimlerinize göre iyileştirebilir veya sürdürebiliriz."
+      "web-sitesi-analizi-neden-onemlidir": {
+        "question": "Web sitesi analizi neden önemlidir?",
+        "answer": "Web sitenizin performansını ve ziyaretçilerinizin davranışlarını anlayarak, sitenizi geliştirmek ve hedeflerinize ulaşmak için gerekli adımları atmanızı sağlar."
+      },
+      "web-sitesi-analizi-kapsaminda-neler-yapilir": {
+        "question": "Web sitesi analizi kapsamında neler yapılır?",
+        "answer": "Ziyaretçi trafiği, kaynaklar, bounce rate (hemen çıkma oranı), dönüşüm oranları gibi veriler analiz edilir."
+      },
+      "web-sitesi-analizi-hangi-araclarla-yapilir": {
+        "question": "Web sitesi analizi hangi araçlarla yapılır?",
+        "answer": "Google Analytics, Google Search Console gibi araçlar web sitesi analizi için kullanılır."
+      },
+      "web-sitesi-analizinin-faydalari": {
+        "question": "Web sitesi analizinin faydaları nelerdir?",
+        "answer": "Web sitenizin güçlü ve zayıf yönlerini belirleyerek iyileştirme alanlarını tespit etmenizi, kullanıcı deneyimini geliştirmenizi ve dönüşüm oranlarını artırmanızı sağlar."
+      },
+      "icerik-stratejisi-nedir": {
+        "question": "İçerik stratejisi nedir?",
+        "answer": "Hedef kitlenizin ilgisini çekecek ve markanızın değerini yansıtacak içeriklerin planlanması, oluşturulması ve yayınlanması sürecidir."
+      },
+      "icerik-stratejisi-neden-onemlidir": {
+        "question": "İçerik stratejisi neden önemlidir?",
+        "answer": "Marka bilinirliğinizi artırır, web sitenizin organik trafiğini yükseltir, potansiyel müşteri kazanımını sağlar ve müşteri sadakati oluşturur."
+      },
+      "hangi-tür-icerikler-uretiyorsunuz": {
+        "question": "Hangi tür içerikler üretiyorsunuz?",
+        "answer": "Blog yazıları, makaleler, videolar, infografikler, e-kitaplar gibi farklı formatlarda içerikler üretiyoruz."
+      },
+      "icerikler-seo-uyumlu-mu-olacak": {
+        "question": "İçerikler SEO uyumlu mu olacak?",
+        "answer": "Evet, içerikleriniz SEO kurallarına uygun olarak hazırlanacak ve web sitenizin arama motorlarında daha üst sıralarda yer almasına yardımcı olacaktır."
+      },
+      "sosyal-medya-yonetimi-nedir": {
+        "question": "Sosyal medya yönetimi hizmeti kapsamında neler yapıyorsunuz?",
+        "answer": "Markanızın sosyal medya hesaplarını yönetiyor, içerikler paylaşıyor, reklam kampanyaları yürütüyor, etkileşimleri takip ediyor ve raporlama yapıyoruz."
+      },
+      "hangi-sosyal-medya-platformlarinda-hizmet-veriyorsunuz": {
+        "question": "Hangi sosyal medya platformlarında hizmet veriyorsunuz?",
+        "answer": "Facebook, Instagram, Twitter, LinkedIn, YouTube gibi popüler platformlarda hizmet veriyoruz."
+      },
+      "sosyal-medya-yonetiminin-faydalari": {
+        "question": "Sosyal medya yönetiminin faydaları nelerdir?",
+        "answer": "Marka bilinirliğinizi artırır, hedef kitlenizle etkileşim kurmanızı sağlar, web sitenize trafik çeker ve satışlarınızı artırır."
+      },
+      "sosyal-medya-stratejiniz-nedir": {
+        "question": "Sosyal medya stratejiniz nedir?",
+        "answer": "Markanızın hedeflerine ve hedef kitlenizin özelliklerine göre özelleştirilmiş bir sosyal medya stratejisi geliştiriyoruz."
+      },
+      "dijital-pazarlama-nedir": {
+        "question": "Dijital pazarlama nedir?",
+        "answer": "İnternet ve dijital teknolojiler kullanılarak yapılan pazarlama faaliyetlerinin tümüdür."
+      },
+      "dijital-pazarlama-hizmetleri-nelerdir": {
+        "question": "Hangi dijital pazarlama hizmetlerini veriyorsunuz?",
+        "answer": "SEO, SEM, sosyal medya pazarlaması, e-posta pazarlaması, içerik pazarlaması gibi hizmetler veriyoruz."
+      },
+      "dijital-pazarlama-calismalarinin-faydalari-nelerdir": {
+        "question": "Dijital pazarlama çalışmalarının faydaları nelerdir?",
+        "answer": "Marka bilinirliğinizi artırır, web sitenize trafik çeker, potansiyel müşteri kazanımını sağlar ve satışlarınızı artırır."
+      },
+      "dijital-pazarlama-stratejiniz-nedir": {
+        "question": "Dijital pazarlama stratejiniz nedir?",
+        "answer": "Markanızın hedeflerine ve hedef kitlenizin özelliklerine göre özelleştirilmiş bir dijital pazarlama stratejisi geliştiriyoruz."
       }
     }
   }
