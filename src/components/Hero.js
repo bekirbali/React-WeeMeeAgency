@@ -100,9 +100,10 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-5xl md:text-[108px] font-bold mb-6">
+            <h1 className="sr-only">Dijital Pazarlama</h1>
+            <h2 className="text-5xl md:text-[108px] font-bold mb-6">
               {t("hero.title")} <span className="text-primary bg-black"></span>
-            </h1>
+            </h2>
             <p className="text-gray-600 text-lg md:text-2xl mb-8">
               {t("hero.subtitle")}
             </p>
