@@ -6,7 +6,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const FAQ = () => {
   const { t } = useTranslation();
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openKey, setOpenKey] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -127,21 +128,27 @@ const FAQ = () => {
     },
   ];
 
+  const filteredFaqItems = faqItems.filter((item) => {
+    const searchLower = searchQuery.toLowerCase();
+    return (
+      item.question.toLowerCase().includes(searchLower) ||
+      item.answer.toLowerCase().includes(searchLower)
+    );
+  });
+
   useEffect(() => {
     const hash = location.hash.replace("#", "");
-    const questionIndex = faqItems.findIndex((item) => item.key === hash);
-    if (questionIndex !== -1) {
-      setOpenIndex(questionIndex);
+    if (hash) {
+      setOpenKey(hash);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.hash]);
 
-  const toggleQuestion = (index) => {
-    const newIndex = openIndex === index ? null : index;
-    setOpenIndex(newIndex);
+  const toggleQuestion = (key) => {
+    const newKey = openKey === key ? null : key;
+    setOpenKey(newKey);
 
-    if (newIndex !== null) {
-      navigate(`#${faqItems[index].key}`);
+    if (newKey !== null) {
+      navigate(`#${key}`);
     } else {
       navigate("");
     }
@@ -158,46 +165,73 @@ const FAQ = () => {
         >
           {t("faq.title")}
         </motion.h1>
+
+        {/* Search Bar */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="max-w-3xl mx-auto mb-8"
+        >
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder={t("faq.searchPlaceholder") || "Search FAQs..."}
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+          />
+        </motion.div>
+
         <div className="max-w-3xl mx-auto space-y-4">
-          {faqItems.map((item, index) => (
-            <motion.div
-              key={item.key}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+          {filteredFaqItems.length === 0 ? (
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="text-center text-gray-600 py-8"
             >
-              <button
-                onClick={() => toggleQuestion(index)}
-                className="w-full px-6 py-4 flex items-center justify-between text-left"
+              {t("faq.noResults") || "No matching questions found."}
+            </motion.p>
+          ) : (
+            filteredFaqItems.map((item) => (
+              <motion.div
+                key={item.key}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow"
               >
-                <h3 className="text-xl font-semibold text-gray-800">
-                  {item.question}
-                </h3>
-                <motion.div
-                  animate={{ rotate: openIndex === index ? 180 : 0 }}
-                  transition={{ duration: 0.3 }}
+                <button
+                  onClick={() => toggleQuestion(item.key)}
+                  className="w-full px-6 py-4 flex items-center justify-between text-left"
                 >
-                  <ChevronDownIcon className="h-6 w-6 text-gray-500" />
-                </motion.div>
-              </button>
-              <AnimatePresence>
-                {openIndex === index && (
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {item.question}
+                  </h3>
                   <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
+                    animate={{ rotate: openKey === item.key ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
-                    className="overflow-hidden"
                   >
-                    <div className="px-6 pb-4">
-                      <p className="text-gray-600">{item.answer}</p>
-                    </div>
+                    <ChevronDownIcon className="h-6 w-6 text-gray-500" />
                   </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
-          ))}
+                </button>
+                <AnimatePresence>
+                  {openKey === item.key && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-6 pb-4">
+                        <p className="text-gray-600">{item.answer}</p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            ))
+          )}
         </div>
       </div>
     </div>
