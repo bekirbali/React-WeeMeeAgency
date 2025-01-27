@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -14,10 +15,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: "Facebook", href: "#" },
-    { name: "Twitter", href: "#" },
-    { name: "LinkedIn", href: "#" },
-    { name: "Instagram", href: "#" },
+    { name: "Facebook", href: "https://www.instagram.com/weemeagency/" },
+    { name: "Twitter", href: "https://www.instagram.com/weemeagency/" },
+    { name: "LinkedIn", href: "https://www.instagram.com/weemeagency/" },
+    { name: "Instagram", href: "https://www.instagram.com/weemeagency/" },
   ];
 
   return (
@@ -62,8 +63,9 @@ const Footer = () => {
               <ul className="space-y-2">
                 {socialLinks.map((link) => (
                   <li key={link.name}>
-                    <Link
-                      to="home"
+                    <RouterLink
+                      target="_blank"
+                      to={link.href}
                       spy={true}
                       smooth={true}
                       offset={-64}
@@ -71,7 +73,7 @@ const Footer = () => {
                       className="text-gray-300 hover:text-white cursor-pointer transition-colors"
                     >
                       {link.name}
-                    </Link>
+                    </RouterLink>
                   </li>
                 ))}
               </ul>
