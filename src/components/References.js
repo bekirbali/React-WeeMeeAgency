@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { alarga, sorbil, suzenia } from "../assets";
 
-// Placeholder logos (replace with actual company logos)
-// const logos = Array(3).fill("/logo-placeholder.png");
 const logos = [
   {
     name: "Alarga",
@@ -67,18 +65,6 @@ const References = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center mt-16"
-        >
-          <p className="text-gray-600">
-            
-          </p>
-        </motion.div> */}
       </div>
     </section>
   );

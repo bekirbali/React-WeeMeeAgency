@@ -36,7 +36,6 @@ const Contact = () => {
         process.env.REACT_APP_MAIL_KEY
       )
       .then((result) => {
-        console.log(result.text, "success");
         setFormData({
           name: "",
           email: "",
@@ -45,9 +44,7 @@ const Contact = () => {
           privacyPolicy: false,
         });
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch((err) => {});
   };
 
   const handleChange = (e) => {
@@ -258,7 +255,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Privacy Policy Modal */}
+      {/* KVKK */}
       <Modal
         isOpen={showKvkkModal}
         onClose={() => setShowKvkkModal(false)}
@@ -473,48 +470,6 @@ const Contact = () => {
           </p>
         </div>
       </Modal>
-      {/* <Modal
-        isOpen={showPrivacyModal}
-        onClose={() => setShowPrivacyModal(false)}
-        title={t("footer.privacy")}
-      >
-        <div className="prose prose-sm">
-          <h2>{t("privacyPolicy.title")}</h2>
-          <p>{t("privacyPolicy.lastUpdated")}</p>
-          <h3>{t("privacyPolicy.collection.title")}</h3>
-          <p>{t("privacyPolicy.collection.content")}</p>
-          <h3>{t("privacyPolicy.usage.title")}</h3>
-          <p>{t("privacyPolicy.usage.content")}</p>
-          <h3>{t("privacyPolicy.protection.title")}</h3>
-          <p>{t("privacyPolicy.protection.content")}</p>
-          <h3>{t("privacyPolicy.cookies.title")}</h3>
-          <p>{t("privacyPolicy.cookies.content")}</p>
-          <h3>{t("privacyPolicy.contact.title")}</h3>
-          <p>{t("privacyPolicy.contact.content")}</p>
-        </div>
-      </Modal> */}
-
-      {/* Terms of Service Modal */}
-      {/* <Modal
-        isOpen={showTermsModal}
-        onClose={() => setShowTermsModal(false)}
-        title={t("footer.terms")}
-      >
-        <div className="prose prose-sm">
-          <h2>{t("terms.title")}</h2>
-          <p>{t("terms.lastUpdated")}</p>
-          <h3>{t("terms.acceptance.title")}</h3>
-          <p>{t("terms.acceptance.content")}</p>
-          <h3>{t("terms.services.title")}</h3>
-          <p>{t("terms.services.content")}</p>
-          <h3>{t("terms.intellectual.title")}</h3>
-          <p>{t("terms.intellectual.content")}</p>
-          <h3>{t("terms.liability.title")}</h3>
-          <p>{t("terms.liability.content")}</p>
-          <h3>{t("terms.contact.title")}</h3>
-          <p>{t("terms.contact.content")}</p>
-        </div>
-      </Modal> */}
     </section>
   );
 };
