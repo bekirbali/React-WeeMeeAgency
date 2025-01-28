@@ -36,7 +36,6 @@ const Contact = () => {
         process.env.REACT_APP_MAIL_KEY
       )
       .then((result) => {
-        console.log(result.text, "success");
         setFormData({
           name: "",
           email: "",
@@ -45,9 +44,7 @@ const Contact = () => {
           privacyPolicy: false,
         });
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch((err) => {});
   };
 
   const handleChange = (e) => {

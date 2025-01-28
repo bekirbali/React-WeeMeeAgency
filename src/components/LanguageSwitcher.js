@@ -11,7 +11,6 @@ const LanguageSwitcher = () => {
     setIsEnglish((prev) => !prev);
     i18n.changeLanguage(lang === "tr" ? "en" : "tr");
     setLang(lang === "tr" ? "en" : "tr");
-    console.log(i18n.language);
   };
 
   return (
