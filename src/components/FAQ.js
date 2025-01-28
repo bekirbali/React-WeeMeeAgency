@@ -143,6 +143,10 @@ const FAQ = () => {
     }
   }, [location.hash]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const toggleQuestion = (key) => {
     const newKey = openKey === key ? null : key;
     setOpenKey(newKey);
