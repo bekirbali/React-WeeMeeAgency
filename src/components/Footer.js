@@ -52,6 +52,14 @@ const Footer = () => {
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <RouterLink
+                    to="/faq"
+                    className="text-gray-300 hover:text-white cursor-pointer transition-colors"
+                  >
+                    {t("navbar.faq")}
+                  </RouterLink>
+                </li>
               </ul>
             </div>
 
@@ -78,29 +86,6 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-
-            {/* Newsletter */}
-            {/* <div className="col-span-1">
-              <h4 className="text-lg font-semibold mb-4">
-                {t("footer.newsletter.title")}
-              </h4>
-              <p className="text-gray-300 mb-4">
-                {t("footer.newsletter.description")}
-              </p>
-              <form className="space-y-2">
-                <input
-                  type="email"
-                  placeholder={t("footer.newsletter.placeholder")}
-                  className="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-                <button
-                  type="submit"
-                  className="w-full px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
-                >
-                  {t("footer.newsletter.button")}
-                </button>
-              </form>
-            </div> */}
           </div>
         </div>
 
@@ -110,28 +95,6 @@ const Footer = () => {
             <div className="text-gray-300 text-sm cursor-default">
               © {currentYear} WeeMeAgency. {t("footer.rights")}
             </div>
-            {/* <div className="flex space-x-4 text-sm">
-              <Link
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-64}
-                duration={50}
-                className="text-gray-300 hover:text-white cursor-pointer transition-colors"
-              >
-                {t("footer.privacy")}
-              </Link>
-              <Link
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-64}
-                duration={50}
-                className="text-gray-300 hover:text-white cursor-pointer transition-colors"
-              >
-                {t("footer.terms")}
-              </Link>
-            </div> */}
           </div>
         </div>
       </div>

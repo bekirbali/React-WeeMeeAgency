@@ -4,25 +4,6 @@ import { motion } from "framer-motion";
 import { weemeelogo } from "../assets";
 
 const LoadingScreen = () => {
-  const text = "WeeMe Agency"; // Gösterilecek metin
-  const letters = text.split(""); // Harfleri ayır
-
-  // Animasyon varyantları
-  const container = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 1.2 / letters.length, // Harfler arasındaki gecikme
-      },
-    },
-  };
-
-  const child = {
-    hidden: { opacity: 0, y: 250 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-  };
-
   const logoVariant = {
     hidden: { opacity: 0, scale: 0.2 },
     visible: {
