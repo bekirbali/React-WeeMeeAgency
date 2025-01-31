@@ -208,9 +208,9 @@ const FAQ = () => {
                   onClick={() => toggleQuestion(item.key)}
                   className="w-full px-6 py-4 flex items-center justify-between text-left"
                 >
-                  <h3 className="text-xl font-semibold text-gray-800">
+                  <h1 className="text-xl font-semibold text-gray-800">
                     {item.question}
-                  </h3>
+                  </h1>
                   <motion.div
                     animate={{ rotate: openKey === item.key ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
