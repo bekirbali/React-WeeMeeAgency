@@ -1,25 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import References from "./components/References";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import LoadingScreen from "./components/LoadingScreen";
-import FAQ from "./components/FAQ";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import Services from "./components/Services/Services";
+import References from "./components/References/References";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
+import FAQ from "./components/FAQ/FAQ";
 
 function MainPage() {
   return (
-    <>
-      <main>
-        <Hero />
-        <Services />
-        <References />
-        <Contact />
-      </main>
-    </>
+    <main>
+      <Hero />
+      <Services />
+      <References />
+      <Contact />
+    </main>
   );
 }
 
