@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className="cursor-pointer">
             <RouterLink to="/" className="flex items-center">
               <img src={weemeelogo} alt="WeeMeAgency Logo" className="h-12" />
-              <span className="text-2xl font-bold text-primary">
+              <span className="text-2xl font-bold text-primary cursor-pointer">
                 WeeMeAgency
               </span>
             </RouterLink>

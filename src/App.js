@@ -11,6 +11,9 @@ import LoadingScreen from "./components/LoadingScreen";
 import FAQ from "./components/FAQ";
 
 function MainPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <main>
